@@ -2,9 +2,10 @@ import { Button, Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import './Banner.css'
-
+import Typical from 'react-typical'
 
 const Banner = () => {
+
   return (
     <Box className="background" id="home">
       <Container sx={{ height: '95vh' }}>
@@ -16,10 +17,23 @@ const Banner = () => {
             <Typography sx={{ color: '#fff', fontSize: '75px', fontFamily: 'Ubuntu', fontWeight: 600 }}>
               Saddaul Siam
             </Typography>
-            <Typography sx={{ color: '#fff', fontSize: '40px', fontFamily: 'Ubuntu', fontWeight: 500 }}>
-              And I'm a Developer
+            <Typography sx={{ color: '#fff', fontSize: '35px', fontFamily: 'Ubuntu', fontWeight: 500 }}>
+              <Box sx={{ display: 'flex' }}> <Box sx={{mr:1}}>And I'm a</Box> <Typical
+                loop={Infinity}
+                wrapper="span"
+                delay= "1000"
+                steps={[
+                  'Developer',
+                  2000,
+                  'Programmer',
+                  2000,
+                  'Designer',
+                  2000,
+                ]}
+              />
+              </Box>
             </Typography>
-            <Button variant="outlined" color="error" sx={{ fontSize: '20px', fontWeight: 400, }}>Hire me</Button>
+            <Button variant="outlined" color="error" sx={{ fontSize: '20px', fontWeight: 400,mt:3 }}>Hire me</Button>
           </Box>
         </Box>
       </Container>
