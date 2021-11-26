@@ -14,7 +14,7 @@ const Banner = () => {
               Hello, my name is
             </Typography>
             <Typography sx={{ color: '#fff', fontSize: '75px', fontFamily: 'Ubuntu', fontWeight: 600 }}>
-              Saddaul Sima
+              Saddaul Siam
             </Typography>
             <Typography sx={{ color: '#fff', fontSize: '40px', fontFamily: 'Ubuntu', fontWeight: 500 }}>
               And I'm a Developer
