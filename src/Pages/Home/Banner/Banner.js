@@ -6,7 +6,7 @@ import './Banner.css'
 
 const Banner = () => {
   return (
-    <Box className="background">
+    <Box className="background" id="home">
       <Container sx={{ height: '95vh' }}>
         <Box sx={{ display: 'flex', alignItems: 'center', height: '95vh' }}>
           <Box>

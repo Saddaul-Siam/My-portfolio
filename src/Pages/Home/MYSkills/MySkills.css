@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.html {width: 95%; background-color: #04AA6D;}
+.css {width: 90%; background-color: #2196F3;}
+.js {width: 90%; background-color: #f44336;}
+.php {width: 85%; background-color: #808080;}

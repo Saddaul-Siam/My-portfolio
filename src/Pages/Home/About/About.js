@@ -4,7 +4,7 @@ import React from 'react';
 import img from '../../../images/profile-1.jpeg'
 const About = () => {
   return (
-    <Container sx={{ py: 10 }}>
+    <Container sx={{ py: 10 }} id="about">
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 500 }}>
