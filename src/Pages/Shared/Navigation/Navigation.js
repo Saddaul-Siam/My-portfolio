@@ -11,6 +11,7 @@ import { Button, Container, CssBaseline } from '@mui/material';
 import PropTypes from 'prop-types';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
+import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -75,7 +76,8 @@ export default function Navigation(props) {
         <a style={{ textDecoration: 'none', color: '#262626' }} href="#contact"><Button color="inherit">Contact</Button></a>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="#resume"><Button color="inherit">Download Resume</Button></a>
+        <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
+          style={{ textDecoration: "none" }}><Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button></a>
       </MenuItem>
     </Menu>
   );
@@ -109,7 +111,8 @@ export default function Navigation(props) {
                 <a style={{ textDecoration: 'none', color: 'white' }} href="#services"><Button color="inherit">Services</Button></a>
                 <a style={{ textDecoration: 'none', color: 'white' }} href="#skills"><Button color="inherit">Skills</Button></a>
                 <a style={{ textDecoration: 'none', color: 'white' }} href="#contact"><Button color="inherit">Contact</Button></a>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#resume"><Button color="inherit">Download Resume</Button></a>
+                <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
+                  style={{ textDecoration: "none",color:'white' }}><Button color="inherit">Download Resume</Button></a>
               </Box>
               <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                 <IconButton

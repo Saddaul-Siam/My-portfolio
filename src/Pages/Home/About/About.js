@@ -1,7 +1,10 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import img from '../../../images/profile-1.jpeg'
+import Typical from 'react-typical'
+import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
+
+
 const About = () => {
   return (
     <Container sx={{ py: 10 }} id="about">
@@ -22,13 +25,26 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={7}>
             <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 24, fontWeight: 600, lineHeight: '4rem' }}>
-              I'm Saddaul Siam and I'm a Developer
+              <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1 }}>I'm Saddaul Siam and I'm a</Box> <Typical
+                loop={Infinity}
+                wrapper="span"
+                delay="1000"
+                steps={[
+                  'Developer',
+                  2000,
+                  'Programmer',
+                  2000,
+
+                ]}
+              />
+              </Box>
             </Typography>
 
             <Typography paragraph >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi earum rerum illo mollitia eius voluptatum, esse iure vero molestias eveniet dignissimos maxime accusamus reprehenderit dolore distinctio? Reiciendis quia tempore eveniet incidunt dolorem molestiae quos doloribus! Ipsam incidunt minus quia, ducimus quas nemo voluptatem recusandae aliquid accusamus natus enim dolor molestiae, ratione consequatur vero sit, iure atque doloremque maxime mollitia dicta dolores commodi! Quam corrupti recusandae sapiente aperiam, eos vero ad quod quo beatae ea repellat reprehenderit a fuga doloribus, aliquid officia tempora animi eius voluptate maiores porro impedit ex. Veritatis quo illo blanditiis nobis, fugit natus. Excepturi incidunt odio velit, quo, dolorem nostrum maxime, consectetur cumque ipsum hic eum quibusdam atque voluptatibus nulla doloremque. Esse eligendi illo sequi perspiciatis, id eius, expedita nostrum cum, laborum exercitationem harum voluptatibus. Nulla, suscipit
             </Typography>
-            <Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button>
+            <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer" 
+            style={{ textDecoration: "none" }}><Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button></a>
           </Grid>
         </Box>
       </Grid>

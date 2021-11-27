@@ -26,9 +26,7 @@ const Banner = () => {
                   'Developer',
                   2000,
                   'Programmer',
-                  2000,
-                  'Designer',
-                  2000,
+                  2000
                 ]}
               />
               </Box>
