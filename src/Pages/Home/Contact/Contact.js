@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <Container sx={{ py: 10 }} id="contact">
       <Box sx={{ display: 'flex', justifyContent: 'center', py: 5 }}>
-        <Typography sx={{ fontWeight: 700, fontSize: 60, color: '#3C3E41' }}>
+        <Typography sx={{ fontWeight: 700, fontSize: 40, color: '#3C3E41' }}>
           Contact With Me
         </Typography>
       </Box>

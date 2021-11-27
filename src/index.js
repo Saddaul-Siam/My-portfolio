@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import CssBaseline from '@mui/material/CssBaseline';
+import 'swiper/swiper-bundle.min.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline />
-      <App />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
