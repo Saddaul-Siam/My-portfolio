@@ -1,15 +1,31 @@
 import { Button, Container, Grid, IconButton, Paper, TextField, Typography } from '@mui/material';
-import React from 'react';
+import React, { useRef } from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { useForm } from "react-hook-form";
 import { Box } from '@mui/system';
-
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_olsyzbs', 'template_ga89sks', e.target, 'user_zY9PhOZfd0w62teBhlcuR')
+      .then((result) => {
+        if (result.text) {
+          alert("message send successfully")
+        }
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      })
+      .finally(() => {
+        e.target.reset()
+      })
+  };
   return (
     <Container sx={{ py: 20 }} id="contact">
       <Box sx={{ display: 'flex', justifyContent: 'center', pb: 5 }}>
@@ -53,24 +69,23 @@ const Contact = () => {
         </Grid>
         <Grid item xs={12} md={7}>
           <Paper sx={{ p: 3, backgroundColor: '#ECF0F3 !important' }} elevation={3}>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={sendEmail}>
               <Grid container spacing={5}>
                 <Grid item xs={12} md={6}>
                   <Typography variant="body2">YOUR NAME</Typography>
-                  <TextField sx={{ width: '100%', backgroundColor: '#fff' }} id="outlined-basic" variant="outlined" {...register("example")} />
+                  <TextField sx={{ width: '100%', backgroundColor: '#fff' }} name="name" id="outlined-basic" variant="outlined" />
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography variant="body2">PHONE NUMBER </Typography>
-                  <TextField id="outlined-basic" sx={{ width: '100%', backgroundColor: '#fff' }} variant="outlined" {...register("example")} />
+                  <TextField id="outlined-basic" sx={{ width: '100%', backgroundColor: '#fff' }} name="phone" variant="outlined" />
                 </Grid>
               </Grid>
               <Typography variant="body2" sx={{ pt: 3 }}>EMAIL</Typography>
-              <TextField id="outlined-basic" sx={{ width: '100%', mb: 3, backgroundColor: '#fff' }} variant="outlined" {...register("example")} />
+              <TextField id="outlined-basic" sx={{ width: '100%', mb: 3, backgroundColor: '#fff' }} name="email" variant="outlined" />
               <Typography variant="body2">SUBJECT</Typography>
-              <TextField id="outlined-basic" sx={{ width: '100%', mb: 3, backgroundColor: '#fff' }} variant="outlined" {...register("example")} />
+              <TextField id="outlined-basic" sx={{ width: '100%', mb: 3, backgroundColor: '#fff' }} name="subject" variant="outlined" />
               <Typography variant="body2">YOUR MESSAGE</Typography>
-              <textarea rows="10" style={{ width: '100%', border: 'none' }} />
-              {errors.exampleRequired && <span>This field is required</span>}
+              <textarea rows="10" style={{ width: '100%', border: 'none',fontFamily:"sans-serif",fontSize:18,resize:'none'}} name="message" />
               <br />
               <Button type="submit" sx={{ width: '100%', my: 3, py: 2 }} variant="contained">SEND MESSAGE</Button>
             </form>
