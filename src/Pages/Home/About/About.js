@@ -30,7 +30,7 @@ const About = () => {
                 wrapper="span"
                 delay="1000"
                 steps={[
-                  'Developer',
+                  'Web Developer',
                   2000,
                   'Programmer',
                   2000,
@@ -41,10 +41,10 @@ const About = () => {
             </Typography>
 
             <Typography paragraph >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi earum rerum illo mollitia eius voluptatum, esse iure vero molestias eveniet dignissimos maxime accusamus reprehenderit dolore distinctio? Reiciendis quia tempore eveniet incidunt dolorem molestiae quos doloribus! Ipsam incidunt minus quia, ducimus quas nemo voluptatem recusandae aliquid accusamus natus enim dolor molestiae, ratione consequatur vero sit, iure atque doloremque maxime mollitia dicta dolores commodi! Quam corrupti recusandae sapiente aperiam, eos vero ad quod quo beatae ea repellat reprehenderit a fuga doloribus, aliquid officia tempora animi eius voluptate maiores porro impedit ex. Veritatis quo illo blanditiis nobis, fugit natus. Excepturi incidunt odio velit, quo, dolorem nostrum maxime, consectetur cumque ipsum hic eum quibusdam atque voluptatibus nulla doloremque. Esse eligendi illo sequi perspiciatis, id eius, expedita nostrum cum, laborum exercitationem harum voluptatibus. Nulla, suscipit
+              I’m a Front End Web developer who is passionate about making error-free websites with 100% client satisfaction. I love to solve real-world problems. I am strategic, goal-oriented, and always work with an end goal in mind. I pride myself on doing quality work and maintaining excellent communication. Most of the time I work with JavaScript ReactJS
             </Typography>
-            <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer" 
-            style={{ textDecoration: "none" }}><Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button></a>
+            <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
+              style={{ textDecoration: "none" }}><Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button></a>
           </Grid>
         </Box>
       </Grid>

@@ -20,10 +20,27 @@ const MYSkills = () => {
           <Typography sx={{ fontFamily: 'Ubuntu', py: 2, fontWeight: 600, fontSize: 28 }}>
             My creative skills & experiences.
           </Typography>
-          <Typography sx={{  py: 2, fontWeight: 500, fontSize: 18,pb:5 }} >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.
+          <Typography sx={{ py: 2, fontWeight: 500, fontSize: 18, pb: 5 }} >
+            Why Choose Me?
+            <br />
+            ✔ Many clients are happy after working with me.<br />
+            ✔ I will revise until your satisfaction<br />
+            ✔ Customer Satisfaction is my First Priority<br />
+            <br />
+            My Service:
+            <br />
+            ✅ Web Development / Customization<br />
+            ✅ e-commerce Development / Customization<br />
+            ✅ Web Design<br />
+            ✅ JavaScript /React/ HTML5 / CSS3/ Bootstrap /Material UI<br />
+            ✅ Photoshop
+            <br /><br />
+            For Instant Inquiry:<br /><br />
+            ☑ Email: saddaulsiam@gmail.com
+            <br /><br />
+            Full and fresh hand code is my power. Client satisfaction is my first priority. Work with me and be happy with the result.
           </Typography>
-          <Button variant="contained" color="error" sx={{px:3,py:1}}>Red more</Button>
+          <Button variant="contained" color="error" sx={{ px: 3, py: 1 }}>Red more</Button>
         </Grid>
         <Grid item xs={12} md={6}>
           <p>HTML</p>

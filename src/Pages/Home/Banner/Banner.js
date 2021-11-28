@@ -18,12 +18,12 @@ const Banner = () => {
               Saddaul Siam
             </Typography>
             <Typography sx={{ color: '#fff', fontSize: '35px', fontFamily: 'Ubuntu', fontWeight: 500 }}>
-              <Box sx={{ display: 'flex' }}> <Box sx={{mr:1}}>And I'm a</Box> <Typical
+              <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1 }}>And I'm a</Box> <Typical
                 loop={Infinity}
                 wrapper="span"
-                delay= "1000"
+                delay="1000"
                 steps={[
-                  'Developer',
+                  'Web Developer',
                   2000,
                   'Programmer',
                   2000
@@ -31,7 +31,7 @@ const Banner = () => {
               />
               </Box>
             </Typography>
-            <Button variant="outlined" color="error" sx={{ fontSize: '20px', fontWeight: 400,mt:3 }}>Hire me</Button>
+            <Button variant="contained" color="error" sx={{ px: 4, py: 1, fontSize: '20px', fontWeight: 400, mt: 3 }}>Hire me</Button>
           </Box>
         </Box>
       </Container>
