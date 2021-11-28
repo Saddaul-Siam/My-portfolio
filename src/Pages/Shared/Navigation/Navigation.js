@@ -13,6 +13,10 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Zoom from '@mui/material/Zoom';
+
 function HideOnScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -30,6 +34,46 @@ HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
   window: PropTypes.func,
 };
+
+function ScrollTop(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      '#home',
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  };
+
+  return (
+    <Zoom in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Zoom>
+  );
+}
+
+ScrollTop.propTypes = {
+  children: PropTypes.element.isRequired,
+  window: PropTypes.func,
+};
+
 
 export default function Navigation(props) {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -83,55 +127,62 @@ export default function Navigation(props) {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <CssBaseline />
-      <HideOnScroll {...props} sx={{ backgroundColor: '#666' }}>
-        <AppBar sx={{ backgroundColor: '#050505' }}>
-          <Container>
-            <Toolbar>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="open drawer"
-                sx={{ mr: 2 }}
-              >
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="div"
-                >
-                  SADDAUL SIAM
-                </Typography>
-              </IconButton>
-              <Box sx={{ flexGrow: 1 }} />
-              <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#home"><Button color="inherit">Home</Button></a>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#about"><Button color="inherit">About</Button></a>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#services"><Button color="inherit">Services</Button></a>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#skills"><Button color="inherit">Skills</Button></a>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#projects"><Button color="inherit">Projects</Button></a>
-                <a style={{ textDecoration: 'none', color: 'white' }} href="#contact"><Button color="inherit">Contact</Button></a>
-                <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
-                  style={{ textDecoration: "none",color:'white' }}><Button color="inherit">Download Resume</Button></a>
-              </Box>
-              <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+    <React.Fragment>
+      <Box sx={{ flexGrow: 1 }}>
+        <CssBaseline />
+        <HideOnScroll {...props} sx={{ backgroundColor: '#666' }}>
+          <AppBar sx={{ backgroundColor: '#050505' }}>
+            <Container>
+              <Toolbar>
                 <IconButton
                   size="large"
-                  aria-label="show more"
-                  aria-controls={mobileMenuId}
-                  aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
+                  edge="start"
                   color="inherit"
+                  aria-label="open drawer"
+                  sx={{ mr: 2 }}
                 >
-                  <MenuIcon />
+                  <Typography
+                    variant="h6"
+                    noWrap
+                    component="div"
+                  >
+                    SADDAUL SIAM
+                  </Typography>
                 </IconButton>
-              </Box>
-            </Toolbar>
-          </Container>
-        </AppBar>
-      </HideOnScroll>
-      {renderMobileMenu}
-    </Box >
+                <Box sx={{ flexGrow: 1 }} />
+                <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="#home"><Button color="inherit">Home</Button></a>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="#about"><Button color="inherit">About</Button></a>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="#services"><Button color="inherit">Services</Button></a>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="#skills"><Button color="inherit">Skills</Button></a>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="#projects"><Button color="inherit">Projects</Button></a>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="#contact"><Button color="inherit">Contact</Button></a>
+                  <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
+                    style={{ textDecoration: "none", color: 'white' }}><Button color="inherit">Download Resume</Button></a>
+                </Box>
+                <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                  <IconButton
+                    size="large"
+                    aria-label="show more"
+                    aria-controls={mobileMenuId}
+                    aria-haspopup="true"
+                    onClick={handleMobileMenuOpen}
+                    color="inherit"
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                </Box>
+              </Toolbar>
+            </Container>
+          </AppBar>
+        </HideOnScroll>
+        {renderMobileMenu}
+      </Box >
+      <ScrollTop {...props}>
+        <Fab color="primary" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
+    </React.Fragment >
   );
 }
