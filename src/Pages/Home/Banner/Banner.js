@@ -18,17 +18,19 @@ const Banner = () => {
               Saddaul Siam
             </Typography>
             <Typography sx={{ color: '#fff', fontSize: '35px', fontFamily: 'Ubuntu', fontWeight: 500 }}>
-              <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1 }}>And I'm a</Box> <Typical
+              <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1, }}>And I'm a</Box> <Box sx={{ color: 'crimson' }}><Typical
                 loop={Infinity}
                 wrapper="span"
                 delay="1000"
                 steps={[
                   'Web Developer',
                   2000,
+                  'Web Designer',
+                  2000,
                   'Programmer',
                   2000
                 ]}
-              />
+              /></Box>
               </Box>
             </Typography>
             <Button variant="contained" color="error" sx={{ px: 4, py: 1, fontSize: '20px', fontWeight: 400, mt: 3 }}>Hire me</Button>

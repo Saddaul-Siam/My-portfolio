@@ -25,18 +25,19 @@ const About = () => {
         </Grid>
         <Grid item sm={12} md={7}>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 24, fontWeight: 600, lineHeight: '4rem' }}>
-            <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1 }}>I'm Saddaul Siam and I'm a</Box> <Typical
+            <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1 }}>I'm Saddaul Siam and I'm a</Box> <Box sx={{ color: 'crimson' }}><Typical
               loop={Infinity}
               wrapper="span"
               delay="1000"
               steps={[
                 'Web Developer',
                 2000,
-                'Programmer',
+                'Web Designer',
                 2000,
-
+                'Programmer',
+                2000
               ]}
-            />
+            /></Box>
             </Box>
           </Typography>
 

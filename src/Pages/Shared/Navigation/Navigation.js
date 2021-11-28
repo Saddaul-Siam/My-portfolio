@@ -142,11 +142,11 @@ export default function Navigation(props) {
                   sx={{ mr: 2 }}
                 >
                   <Typography
-                    variant="h6"
+                    sx={{ fontSize: '24px', fontWeight: 600 }}
                     noWrap
                     component="div"
                   >
-                    SADDAUL SIAM
+                    SADDAUL <span style={{ color: 'crimson' }}>SIAM</span>
                   </Typography>
                 </IconButton>
                 <Box sx={{ flexGrow: 1 }} />
