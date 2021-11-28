@@ -35,7 +35,7 @@ const Contact = () => {
       </Box>
       <Grid container spacing={7}>
         <Grid item xs={12} md={5}>
-          <Paper sx={{ p: 3, pb: 15, backgroundColor: '#ECF0F3 !important' }} elevation={3}>
+          <Paper sx={{ p: 3, pb: 22.5, backgroundColor: '#ECF0F3 !important' }} elevation={3}>
             <img width="100%" src="https://i.ibb.co/9YkgSrL/contact1.png" alt="" />
             <Typography variant="h4" sx={{ pt: 2 }}>
               Saddaul Siam
