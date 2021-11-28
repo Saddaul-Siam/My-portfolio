@@ -17,7 +17,7 @@ SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
 
 const MyProjects = () => {
   return (
-    <Box sx={{ padding: "80px 0px", backgroundColor: '#F5F7FF', py: 20, }}>
+    <Box sx={{ padding: "80px 0px", backgroundColor: '#F5F7FF', py: 20, height: '100vh' }} id="projects">
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Typography sx={{ fontWeight: 700, fontSize: 40, color: '#3C3E41', fontFamily: 'Ubuntu' }} >
           My Resent Projects
@@ -169,7 +169,7 @@ const MyProjects = () => {
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="success">MaterialUI</Button>
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="warning">Firebase</Button>
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="secondary">Node</Button>
-              <Button size="small" sx={{ m: 1, borderRadius: '52px', cursor: "default" }}  variant="outlined" color="primary">MongoDB</Button>
+              <Button size="small" sx={{ m: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="primary">MongoDB</Button>
             </Box>
             <Typography variant="h5" sx={{ m: 2 }}>
               Bike Buzz (e-commerce Website)
@@ -190,7 +190,7 @@ const MyProjects = () => {
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="success">MaterialUI</Button>
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="warning">Firebase</Button>
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="secondary">Node</Button>
-              <Button size="small" sx={{ m: 1, borderRadius: '52px', cursor: "default" }}  variant="outlined" color="primary">MongoDB</Button>
+              <Button size="small" sx={{ m: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="primary">MongoDB</Button>
             </Box>
             <Typography variant="h5" sx={{ m: 2 }}>
               Doctors Portal
@@ -211,7 +211,7 @@ const MyProjects = () => {
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="success">MaterialUI</Button>
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="warning">Firebase</Button>
               <Button size="small" sx={{ mr: 1, borderRadius: '52px', cursor: "default" }} variant="outlined" color="secondary">Node</Button>
-              <Button size="small" sx={{ m: 2, borderRadius: '52px', cursor: "default" }}  variant="outlined" color="primary">MongoDB</Button>
+              <Button size="small" sx={{ m: 2, borderRadius: '52px', cursor: "default" }} variant="outlined" color="primary">MongoDB</Button>
             </Box>
             <Typography variant="h5" sx={{ m: 2 }}>
               Jerins Parlour

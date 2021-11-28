@@ -6,7 +6,7 @@ import './MySkills.css'
 
 const MYSkills = () => {
   return (
-    <Container sx={{ py: 5 }} id="skills">
+    <Container sx={{ py: 5, height: '100vh' }} id="skills">
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 500 }}>
           My skills
