@@ -11,8 +11,8 @@ const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
   return (
-    <Container sx={{ py: 10 ,  height: '100vh'}} id="contact">
-      <Box sx={{ display: 'flex', justifyContent: 'center', py: 5 }}>
+    <Container sx={{ py: 20 }} id="contact">
+      <Box sx={{ display: 'flex', justifyContent: 'center', pb: 5 }}>
         <Typography sx={{ fontWeight: 700, fontSize: 40, color: '#3C3E41' }}>
           Contact With Me
         </Typography>

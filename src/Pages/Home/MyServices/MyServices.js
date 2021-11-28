@@ -21,7 +21,7 @@ const MyServices = () => {
   const { backgroundColor, card } = useStyle()
   return (
     <div className={backgroundColor} id="services">
-      <Container sx={{ py: 10 , height: '80vh'}}>
+      <Container sx={{ py: 20 , }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 500, color: 'white' }}>My Services</Typography>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 16, fontWeight: 'bold', color: 'white' }}>--------What i provide--------</Typography>

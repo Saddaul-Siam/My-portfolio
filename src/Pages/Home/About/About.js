@@ -7,7 +7,7 @@ import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 
 const About = () => {
   return (
-    <Container sx={{ py: 10, height: '80vh' }} id="about">
+    <Container sx={{ py: 20 }} id="about">
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 500 }}>
