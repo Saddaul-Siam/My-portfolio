@@ -16,7 +16,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 635px;
-  height: 600px;
+  /* height: 700px; */
 }
 
 .swiper-slide img {
