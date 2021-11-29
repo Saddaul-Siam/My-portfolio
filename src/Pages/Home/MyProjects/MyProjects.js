@@ -17,7 +17,7 @@ SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
 
 const MyProjects = () => {
   return (
-    <Box sx={{ padding: "80px 0px", backgroundColor: '#F5F7FF', py: 20 }} id="projects">
+    <Box sx={{ padding: "80px 0px", backgroundColor: '#F5F7FF', py: 20 }} id="projects" data-aos="fade-up">
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Typography sx={{ fontWeight: 700, fontSize: 40, color: '#3C3E41', fontFamily: 'Ubuntu' }} >
           My Resent Projects

@@ -1,15 +1,23 @@
 import { Button, Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Banner.css'
 import Typical from 'react-typical'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
-
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 1000,
+      easing: 'ease',
+    });
+  })
   return (
     <Box className="background" id="home">
       <Container sx={{ height: '95vh' }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', height: '95vh' }}>
+        <Box data-aos="fade-right" sx={{ display: 'flex', alignItems: 'center', height: '95vh' }}>
           <Box>
             <Typography sx={{ color: '#fff', fontSize: '27px', fontFamily: 'Ubuntu' }}>
               Hello, my name is

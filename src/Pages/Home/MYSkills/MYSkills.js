@@ -16,7 +16,7 @@ const MYSkills = () => {
         </Typography>
       </Box>
       <Grid container spacing={10}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6}  data-aos="fade-down">
           <Typography sx={{ fontFamily: 'Ubuntu', py: 2, fontWeight: 600, fontSize: 28 }}>
             My creative skills & experiences.
           </Typography>
@@ -42,7 +42,7 @@ const MYSkills = () => {
           </Typography>
           <Button variant="contained" color="error" sx={{ px: 3, py: 1 }}>Red more</Button>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6}data-aos="fade-up">
           <p>HTML</p>
           <div class="container">
             <div class="skills html">95%</div>

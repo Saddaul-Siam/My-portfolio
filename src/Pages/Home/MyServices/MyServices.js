@@ -13,7 +13,7 @@ const MyServices = () => {
       transition: '0.5s',
       '&:hover': {
         background: '#DC143C !important',
-        color: '#fff !important'
+        color: '#fff !important',
       }
     }
 
@@ -21,7 +21,7 @@ const MyServices = () => {
   const { backgroundColor, card } = useStyle()
   return (
     <div className={backgroundColor} id="services">
-      <Container sx={{ py: 20 , }}>
+      <Container sx={{ py: 20, }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 500, color: 'white' }}>My Services</Typography>
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 16, fontWeight: 'bold', color: 'white' }}>--------What i provide--------</Typography>
@@ -29,7 +29,7 @@ const MyServices = () => {
 
         <Grid container spacing={5} sx={{ py: 5 }}>
           <Grid item xs={12} md={4} >
-            <Paper className={card} elevation={0} >
+            <Paper className={card} elevation={0} data-aos="flip-left">
               <img width="100%" height="200px" src="https://i.ibb.co/qp5zsZY/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer.jpg" alt="" />
               <Typography variant="h5">
                 Web Designing
@@ -40,7 +40,7 @@ const MyServices = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} md={4} >
-            <Paper className={card} elevation={0} >
+            <Paper className={card} elevation={0} data-aos="flip-left">
               <img width="100%" height="200px" src="https://i.ibb.co/z53M2GV/download.png" alt="" />
               <Typography variant="h5">
                 MERN Stack Developer
@@ -51,7 +51,7 @@ const MyServices = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} md={4} >
-            <Paper className={card} elevation={0} >
+            <Paper className={card} elevation={0} data-aos="flip-left">
               <img width="100%" height="200px" src="https://i.ibb.co/K7hgRwH/download.jpg" alt="" />
               <Typography variant="h5">
                 PSD To HTML
