@@ -8,12 +8,12 @@ import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "./MyProjects.css";
-import SwiperCore, { EffectCoverflow, Navigation, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Navigation, Pagination,Autoplay } from "swiper";
 import { Box } from "@mui/system";
 
 
 
-SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
+SwiperCore.use([EffectCoverflow, Navigation, Pagination,Autoplay]);
 
 const MyProjects = () => {
   return (
@@ -29,6 +29,10 @@ const MyProjects = () => {
         effect={"coverflow"}
         grabCursor={true}
         // centeredSlides={true}
+        autoplay={{
+          "delay": 2500,
+          "disableOnInteraction": false
+        }}
         slidesPerView={"auto"}
         // loop={true}
         coverflowEffect={{
@@ -323,7 +327,7 @@ const MyProjects = () => {
           </Card>
         </SwiperSlide>
       </Swiper>
-    </Box>
+    </Box >
   );
 };
 
