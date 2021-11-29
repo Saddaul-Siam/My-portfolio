@@ -16,6 +16,7 @@ import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Zoom from '@mui/material/Zoom';
+import { NavLink } from 'react-router-dom';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -117,6 +118,9 @@ export default function Navigation(props) {
         <a style={{ textDecoration: 'none', color: '#262626' }} href="#skills"><Button color="inherit">Skills</Button></a>
       </MenuItem>
       <MenuItem>
+        <NavLink to="/projects"><Button color="inherit">Projects</Button></NavLink>
+      </MenuItem>
+      <MenuItem>
         <a style={{ textDecoration: 'none', color: '#262626' }} href="#contact"><Button color="inherit">Contact</Button></a>
       </MenuItem>
       <MenuItem>
@@ -158,7 +162,7 @@ export default function Navigation(props) {
                   <a style={{ textDecoration: 'none', color: 'white' }} href="#projects"><Button color="inherit">Projects</Button></a>
                   <a style={{ textDecoration: 'none', color: 'white' }} href="#contact"><Button color="inherit">Contact</Button></a>
                   <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
-                    style={{ textDecoration: "none", color: 'white' }}><Button color="inherit">Download Resume</Button></a>
+                    style={{ textDecoration: "none", color: 'white' }}><Button variant="contained" color="error" sx={{ ml: 2 }}>Download Resume</Button></a>
                 </Box>
                 <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                   <IconButton

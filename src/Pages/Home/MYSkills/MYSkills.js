@@ -60,7 +60,15 @@ const MYSkills = () => {
 
           <p>React</p>
           <div class="container">
-            <div class="skills php">85%</div>
+            <div class="skills react">90%</div>
+          </div>
+          <p>Bootstrap</p>
+          <div class="container">
+            <div class="skills bootstrap">95%</div>
+          </div>
+          <p>Material UI</p> 
+          <div class="container">
+            <div class="skills materialUI">95%</div>
           </div>
         </Grid>
       </Grid>
