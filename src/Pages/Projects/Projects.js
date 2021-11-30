@@ -17,7 +17,7 @@ const Project = () => {
     <>
       <Navigation />
       <Container id="home2">
-        <Box sx={{ pt: 15, display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ pt: 15, display: 'flex', justifyContent: 'center' }} id="home">
           <Typography variant="h4" sx={{ fontWeight: 700, pb: 5 }}>My Resent Projects</Typography>
         </Box>
         <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, mb: 5 }} data-aos="fade-up">

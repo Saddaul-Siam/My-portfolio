@@ -34,6 +34,10 @@ const About = () => {
                 2000,
                 'Web Designer',
                 2000,
+                'React Developer',
+                2000,
+                'Frontend Developer',
+                2000,
                 'Programmer',
                 2000
               ]}
