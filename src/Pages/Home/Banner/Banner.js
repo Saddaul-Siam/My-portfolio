@@ -5,6 +5,7 @@ import './Banner.css'
 import Typical from 'react-typical'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 
 const Banner = () => {
   useEffect(() => {
@@ -41,7 +42,10 @@ const Banner = () => {
               /></Box>
               </Box>
             </Typography>
-            <Button variant="contained" color="error" sx={{ px: 4, py: 1, fontSize: '20px', fontWeight: 400, mt: 3 }}>Hire me</Button>
+            <Box sx={{ pt: 3 }}>
+              <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
+                style={{ textDecoration: "none" }}><Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button></a>
+            </Box>
           </Box>
         </Box>
       </Container>

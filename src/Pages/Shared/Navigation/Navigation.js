@@ -16,7 +16,7 @@ import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Zoom from '@mui/material/Zoom';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -46,7 +46,7 @@ function ScrollTop(props) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      '#home',
+      '#home'
     );
 
     if (anchor) {
@@ -135,7 +135,7 @@ export default function Navigation(props) {
       <Box sx={{ flexGrow: 1 }}>
         <CssBaseline />
         <HideOnScroll {...props} sx={{ backgroundColor: '#666' }}>
-          <AppBar sx={{ backgroundColor: '#050505' }}>
+          <AppBar sx={{ backgroundColor: '#050505' }} >
             <Container>
               <Toolbar>
                 <IconButton
@@ -145,13 +145,13 @@ export default function Navigation(props) {
                   aria-label="open drawer"
                   sx={{ mr: 2 }}
                 >
-                  <Typography
+                  <Link to="/" style={{ textDecoration: 'none', color: 'white' }}><Typography
                     sx={{ fontSize: '24px', fontWeight: 600 }}
                     noWrap
                     component="div"
                   >
                     SADDAUL <span style={{ color: 'crimson' }}>SIAM</span>
-                  </Typography>
+                  </Typography></Link>
                 </IconButton>
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
@@ -160,9 +160,8 @@ export default function Navigation(props) {
                   <a style={{ textDecoration: 'none', color: 'white' }} href="/#services"><Button color="inherit">Services</Button></a>
                   <a style={{ textDecoration: 'none', color: 'white' }} href="/#skills"><Button color="inherit">Skills</Button></a>
                   <a style={{ textDecoration: 'none', color: 'white' }} href="/projects"><Button color="inherit">Projects</Button></a>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="/blog"><Button color="inherit">Blog</Button></a>
                   <a style={{ textDecoration: 'none', color: 'white' }} href="/#contact"><Button color="inherit">Contact</Button></a>
-                  <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
-                    style={{ textDecoration: "none", color: 'white' }}><Button variant="contained" color="error" sx={{ ml: 2 }}>Download Resume</Button></a>
                 </Box>
                 <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                   <IconButton
