@@ -9,6 +9,7 @@ import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+import Footer from '../Shared/Footer/Footer';
 
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 const Project = () => {
@@ -19,7 +20,7 @@ const Project = () => {
         <Box sx={{ pt: 15, display: 'flex', justifyContent: 'center' }}>
           <Typography variant="h4" sx={{ fontWeight: 700, pb: 5 }}>My Resent Projects</Typography>
         </Box>
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, mb: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -59,7 +60,7 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -98,7 +99,7 @@ const Project = () => {
               </Box>
             </Box>
           </Grid>
-        </Grid> <Grid container spacing={5} sx={{ py: 5 }}>
+        </Grid> <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -149,7 +150,7 @@ const Project = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -189,7 +190,7 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -227,7 +228,7 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -262,7 +263,7 @@ const Project = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -297,7 +298,7 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -330,7 +331,7 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5 }}>
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -366,6 +367,7 @@ const Project = () => {
           </Grid>
         </Grid>
       </Container>
+      <Footer />
     </>
   );
 };
