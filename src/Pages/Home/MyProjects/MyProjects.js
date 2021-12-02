@@ -10,7 +10,10 @@ import "swiper/components/pagination/pagination.min.css";
 import "./MyProjects.css";
 import SwiperCore, { EffectCoverflow, Navigation, Pagination,Autoplay } from "swiper";
 import { Box } from "@mui/system";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 SwiperCore.use([EffectCoverflow, Navigation, Pagination,Autoplay]);

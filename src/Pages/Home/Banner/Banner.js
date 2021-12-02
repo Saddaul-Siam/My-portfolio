@@ -1,20 +1,13 @@
 import { Button, Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Banner.css'
 import Typical from 'react-typical'
+import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
-
+AOS.init();
 const Banner = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 1000,
-      easing: 'ease',
-    });
-  })
   return (
     <Box className="background" id="home">
       <Container sx={{ height: '95vh' }}>

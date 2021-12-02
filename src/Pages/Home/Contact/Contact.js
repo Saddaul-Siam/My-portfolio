@@ -4,7 +4,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Box } from '@mui/system';
 import emailjs from 'emailjs-com';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();

@@ -10,7 +10,9 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
 import Footer from '../Shared/Footer/Footer';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 const Project = () => {
   return (

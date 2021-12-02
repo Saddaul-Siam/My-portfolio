@@ -2,7 +2,10 @@ import { Container, Grid, Paper, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 import React from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const MyServices = () => {
   const useStyle = makeStyles({
     backgroundColor: {
