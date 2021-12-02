@@ -106,22 +106,22 @@ export default function Navigation(props) {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="#home"><Button color="inherit">Home</Button></a>
+        <a style={{ textDecoration: 'none', color: '#262626' }} href="/"><Button color="inherit">Home</Button></a>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="#about"><Button color="inherit">About</Button></a>
+        <a style={{ textDecoration: 'none', color: '#262626' }} href="/#about"><Button color="inherit">About</Button></a>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="#services"><Button color="inherit">Services</Button></a>
+        <a style={{ textDecoration: 'none', color: '#262626' }} href="/#services"><Button color="inherit">Services</Button></a>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="#skills"><Button color="inherit">Skills</Button></a>
+        <a style={{ textDecoration: 'none', color: '#262626' }} href="/#skills"><Button color="inherit">Skills</Button></a>
       </MenuItem>
       <MenuItem>
         <NavLink to="/projects"><Button color="inherit">Projects</Button></NavLink>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="#contact"><Button color="inherit">Contact</Button></a>
+        <a style={{ textDecoration: 'none', color: '#262626' }} href="/#contact"><Button color="inherit">Contact</Button></a>
       </MenuItem>
       <MenuItem>
         <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
