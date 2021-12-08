@@ -23,10 +23,18 @@ const About = () => {
       </Box>
       <Grid container xs={{ alignItems: 'center' }} spacing={10}>
         {/* <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}> */}
-        <Grid item sm={12} md={5} data-aos="fade-down">
+        <Grid item sm={12} md={5} 
+        data-aos="fade-down" 
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="800"
+        >
           <img width="100%" src="https://i.ibb.co/31R7YBn/186558243-891331958095401-5868203000874984080-n.jpg" alt="" />
         </Grid>
-        <Grid item sm={12} md={7} data-aos="fade-up">
+        <Grid item sm={12} md={7} data-aos="fade-up" 
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="800">
           <Typography sx={{ fontFamily: 'Ubuntu', fontSize: 24, fontWeight: 600, lineHeight: '4rem' }}>
             <Box sx={{ display: 'flex' }}> <Box sx={{ mr: 1 }}>I'm Saddaul Siam and I'm a</Box> <Box sx={{ color: 'crimson' }}><Typical
               loop={Infinity}

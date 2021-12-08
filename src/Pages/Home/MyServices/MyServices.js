@@ -32,7 +32,12 @@ const MyServices = () => {
 
         <Grid container spacing={5} sx={{ py: 5 }}>
           <Grid item xs={12} md={4} >
-            <Paper className={card} elevation={0} data-aos="flip-left">
+            <Paper className={card} elevation={0} 
+            data-aos="flip-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            >
               <img width="100%" height="200px" src="https://i.ibb.co/qp5zsZY/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer.jpg" alt="" />
               <Typography variant="h5">
                 Web Designing
@@ -43,7 +48,12 @@ const MyServices = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} md={4} >
-            <Paper className={card} elevation={0} data-aos="flip-left">
+            <Paper className={card} elevation={0} 
+            data-aos="flip-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            >
               <img width="100%" height="200px" src="https://i.ibb.co/z53M2GV/download.png" alt="" />
               <Typography variant="h5">
                 MERN Stack Developer
@@ -54,7 +64,11 @@ const MyServices = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} md={4} >
-            <Paper className={card} elevation={0} data-aos="flip-left">
+            <Paper className={card} elevation={0} 
+            data-aos="flip-left" 
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500">
               <img width="100%" height="200px" src="https://i.ibb.co/K7hgRwH/download.jpg" alt="" />
               <Typography variant="h5">
                 PSD To HTML

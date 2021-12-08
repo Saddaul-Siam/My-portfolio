@@ -22,7 +22,11 @@ const Project = () => {
         <Box sx={{ pt: 15, display: 'flex', justifyContent: 'center' }} id="home">
           <Typography variant="h4" sx={{ fontWeight: 700, pb: 5 }}>My Resent Projects</Typography>
         </Box>
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, mb: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, mb: 5 }} 
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -62,7 +66,11 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -101,7 +109,11 @@ const Project = () => {
               </Box>
             </Box>
           </Grid>
-        </Grid> <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        </Grid> <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -152,7 +164,11 @@ const Project = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -192,7 +208,11 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -230,7 +250,11 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -265,7 +289,11 @@ const Project = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -300,7 +328,11 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,
@@ -333,7 +365,11 @@ const Project = () => {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }} data-aos="fade-up">
+        <Grid container spacing={5} sx={{ py: 5, boxShadow: 2, my: 5 }}  
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Grid item xs={12} md={6}>
             <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
               "delay": 2500,

@@ -33,7 +33,11 @@ const Contact = () => {
         </Typography>
       </Box>
       <Grid container spacing={7}>
-        <Grid item xs={12} md={5} data-aos="zoom-in">
+        <Grid item xs={12} md={5} 
+        data-aos="zoom-in" 
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500">
           <Paper sx={{ p: 3, pb: 22.5, backgroundColor: '#ECF0F3 !important' }} elevation={3}>
             <img width="100%" src="https://i.ibb.co/9YkgSrL/contact1.png" alt="" />
             <Typography variant="h4" sx={{ pt: 2 }}>
@@ -66,7 +70,11 @@ const Contact = () => {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} md={7} data-aos="zoom-in">
+        <Grid item xs={12} md={7}
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500"
+        data-aos="zoom-in">
           <Paper sx={{ p: 3, backgroundColor: '#ECF0F3 !important' }} elevation={3}>
             <form onSubmit={sendEmail}>
               <Grid container spacing={5}>
