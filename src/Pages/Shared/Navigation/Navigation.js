@@ -1,22 +1,22 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Button, Container, CssBaseline } from '@mui/material';
-import PropTypes from 'prop-types';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Slide from '@mui/material/Slide';
-import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
-
-import Fab from '@mui/material/Fab';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Zoom from '@mui/material/Zoom';
-import { Link, NavLink } from 'react-router-dom';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Button, Container, CssBaseline } from "@mui/material";
+import PropTypes from "prop-types";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
+import PDF from "../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf";
+import logo from "../../../images/logo.png";
+import Fab from "@mui/material/Fab";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Zoom from "@mui/material/Zoom";
+import { Link, NavLink } from "react-router-dom";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -46,13 +46,13 @@ function ScrollTop(props) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      '#home'
+      "#home"
     );
 
     if (anchor) {
       anchor.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
+        behavior: "smooth",
+        block: "center",
       });
     }
   };
@@ -62,7 +62,7 @@ function ScrollTop(props) {
       <Box
         onClick={handleClick}
         role="presentation"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
       >
         {children}
       </Box>
@@ -74,7 +74,6 @@ ScrollTop.propTypes = {
   children: PropTypes.element.isRequired,
   window: PropTypes.func,
 };
-
 
 export default function Navigation(props) {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -88,44 +87,67 @@ export default function Navigation(props) {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const mobileMenuId = 'primary-search-account-menu-mobile';
+  const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
+        vertical: "top",
+        horizontal: "right",
       }}
       id={mobileMenuId}
       keepMounted
       transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
+        vertical: "top",
+        horizontal: "right",
       }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="/"><Button color="inherit">Home</Button></a>
+        <a style={{ textDecoration: "none", color: "#262626" }} href="/">
+          <Button color="inherit">Home</Button>
+        </a>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="/#about"><Button color="inherit">About</Button></a>
+        <a style={{ textDecoration: "none", color: "#262626" }} href="/#about">
+          <Button color="inherit">About</Button>
+        </a>
       </MenuItem>
-      <MenuItem>
+      {/* <MenuItem>
         <a style={{ textDecoration: 'none', color: '#262626' }} href="/#services"><Button color="inherit">Services</Button></a>
       </MenuItem>
       <MenuItem>
         <a style={{ textDecoration: 'none', color: '#262626' }} href="/#skills"><Button color="inherit">Skills</Button></a>
+      </MenuItem> */}
+      <MenuItem>
+        <NavLink
+          to="/projects"
+          style={{ textDecoration: "none", color: "#262626" }}
+        >
+          <Button color="inherit">Projects</Button>
+        </NavLink>
       </MenuItem>
       <MenuItem>
-        <NavLink to="/projects"><Button color="inherit">Projects</Button></NavLink>
+        <a
+          style={{ textDecoration: "none", color: "#262626" }}
+          href="/#contact"
+        >
+          <Button color="inherit">Contact</Button>
+        </a>
       </MenuItem>
       <MenuItem>
-        <a style={{ textDecoration: 'none', color: '#262626' }} href="/#contact"><Button color="inherit">Contact</Button></a>
-      </MenuItem>
-      <MenuItem>
-        <a href={PDF} download="Resume of Md Saddaul Islam Sheam" target='_blank' rel="noreferrer"
-          style={{ textDecoration: "none" }}><Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>Download Resume</Button></a>
+        <a
+          href={PDF}
+          download="Resume of Md Saddaul Islam Sheam"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <Button variant="contained" color="error" sx={{ px: 4, py: 2 }}>
+            Download Resume
+          </Button>
+        </a>
       </MenuItem>
     </Menu>
   );
@@ -134,8 +156,8 @@ export default function Navigation(props) {
     <React.Fragment>
       <Box sx={{ flexGrow: 1 }}>
         <CssBaseline />
-        <HideOnScroll {...props} sx={{ backgroundColor: '#666' }}>
-          <AppBar sx={{ backgroundColor: '#050505' }} >
+        <HideOnScroll {...props} sx={{ backgroundColor: "#666" }}>
+          <AppBar sx={{ backgroundColor: "#050505" }}>
             <Container>
               <Toolbar>
                 <IconButton
@@ -145,25 +167,51 @@ export default function Navigation(props) {
                   aria-label="open drawer"
                   sx={{ mr: 2 }}
                 >
-                  <Link to="/" style={{ textDecoration: 'none', color: 'white' }}><Typography
-                    sx={{ fontSize: '24px', fontWeight: 600 }}
-                    noWrap
-                    component="div"
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", color: "white" }}
                   >
-                    SADDAUL <span style={{ color: 'crimson' }}>SIAM</span>
-                  </Typography></Link>
+                    <Typography
+                      // sx={{ fontSize: '24px', fontWeight: 600 }}
+                      noWrap
+                      component="div"
+                    >
+                      <img src={logo} /* width="300" */ height="55" alt="" />
+                      {/* SADDAUL <span style={{ color: 'crimson' }}>SIAM</span> */}
+                    </Typography>
+                  </Link>
                 </IconButton>
                 <Box sx={{ flexGrow: 1 }} />
-                <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                  <a style={{ textDecoration: 'none', color: 'white' }} href="/"><Button color="inherit">Home</Button></a>
-                  <a style={{ textDecoration: 'none', color: 'white' }} href="/#about"><Button color="inherit">About</Button></a>
-                  <a style={{ textDecoration: 'none', color: 'white' }} href="/#services"><Button color="inherit">Services</Button></a>
-                  <a style={{ textDecoration: 'none', color: 'white' }} href="/#skills"><Button color="inherit">Skills</Button></a>
-                  <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/projects"><Button color="inherit">Projects</Button></NavLink>
-                  <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/blog"><Button color="inherit">Blog</Button></NavLink>
-                  <a style={{ textDecoration: 'none', color: 'white' }} href="/#contact"><Button color="inherit">Contact</Button></a>
+                <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                  <a
+                    style={{ textDecoration: "none", color: "white" }}
+                    href="/"
+                  >
+                    <Button color="inherit">Home</Button>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "white" }}
+                    href="/#about"
+                  >
+                    <Button color="inherit">About</Button>
+                  </a>
+                  {/* <a style={{ textDecoration: 'none', color: 'white' }} href="/#services"><Button color="inherit">Services</Button></a> */}
+                  {/* <a style={{ textDecoration: 'none', color: 'white' }} href="/#skills"><Button color="inherit">Skills</Button></a> */}
+                  <NavLink
+                    style={{ textDecoration: "none", color: "white" }}
+                    to="/projects"
+                  >
+                    <Button color="inherit">Projects</Button>
+                  </NavLink>
+                  {/* <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/blog"><Button color="inherit">Blog</Button></NavLink> */}
+                  <a
+                    style={{ textDecoration: "none", color: "white" }}
+                    href="/#contact"
+                  >
+                    <Button color="inherit">Contact</Button>
+                  </a>
                 </Box>
-                <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                <Box sx={{ display: { xs: "flex", md: "none" } }}>
                   <IconButton
                     size="large"
                     aria-label="show more"
@@ -180,12 +228,12 @@ export default function Navigation(props) {
           </AppBar>
         </HideOnScroll>
         {renderMobileMenu}
-      </Box >
+      </Box>
       <ScrollTop {...props}>
         <Fab color="primary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>
-    </React.Fragment >
+    </React.Fragment>
   );
 }
