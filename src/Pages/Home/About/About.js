@@ -2,7 +2,7 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import Typical from 'react-typical'
-import PDF from '../../../images/Md_ Saddaul Islam Sheam - Google Docs.pdf'
+import PDF from '../../../images/Resume Md_ Saddaul Islam Sheam - Google Docs.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
